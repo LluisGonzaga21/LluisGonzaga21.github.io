@@ -20,57 +20,20 @@
             padding: 20px 0;
             text-align: center;
         }
-        .container {
-            display: flex;
-            max-width: 1200px;
-            margin: 20px auto;
+        section {
             padding: 20px;
-        }
-        .left-column {
-            flex: 1;
-            padding-right: 30px;
-            text-align: center;
-        }
-        .right-column {
-            flex: 2;
-        }
-        .left-column img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 4px solid #4CAF50;
-        }
-        .icons img {
-            margin: 10px;
-            height: 30px;
-            width: 30px;
-        }
-        .tools ul, .experience ul {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 15px;
-            list-style: none;
-            padding: 0;
-        }
-        .tools li, .experience li, .soft-skills li {
-            background: #f0f0f0;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
+            margin: 20px auto;
+            max-width: 900px;
+            background: white;
+            border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .tools img {
-            height: 30px;
-            width: 30px;
-            margin-bottom: 8px;
+        h1, h2, h3 {
+            margin-bottom: 10px;
         }
-        .experience li {
-            font-size: 14px;
-        }
-        .experience p {
-            font-size: 14px;
-            margin-top: 5px;
-            color: #555;
+        a {
+            color: #4CAF50;
+            text-decoration: none;
         }
         footer {
             text-align: center;
@@ -78,6 +41,12 @@
             padding: 10px;
             background: #333;
             color: white;
+        }
+        .center {
+            text-align: center;
+        }
+        .icons img {
+            margin: 0 10px;
         }
     </style>
 </head>
@@ -87,7 +56,7 @@
         <h2>Data Engineer & Data Science Enthusiast</h2>
     </header>
 
-    <div class="container">
+        <div class="container">
         <!-- Left column (photo, contacts) -->
         <div class="left-column">
             <img src="PhotoLinkedin.jpg" alt="Lluis Gonzaga Fuster">
@@ -103,75 +72,119 @@
                 </a>
             </div>
         </div>
+    <div class="right-column">
+    <section id="about">
+        <h3>About Me 😊</h3>
+        <p>🚀 <strong>Designer of scalable data solutions</strong> and technology enthusiast. I build <strong>data pipelines</strong>, manage <strong>petabytes of data</strong>, and create <strong>Data Lake</strong> and <strong>Data Lakehouse architectures</strong> using tools like <strong>Python</strong>, <strong>PySpark</strong>, <strong>AWS S3</strong>, <strong>Glue</strong>, and <strong>Athena</strong>.</p>
+    </section>
 
-        <!-- Right column (content) -->
-        <div class="right-column">
-            <section id="about">
-                <h3>About Me 😊</h3>
-                <p>🚀 <strong>Designer of scalable data solutions</strong> and technology enthusiast. I build <strong>data pipelines</strong>, manage <strong>petabytes of data</strong>, and create <strong>Data Lake</strong> and <strong>Data Lakehouse architectures</strong> using tools like <strong>Python</strong>, <strong>PySpark</strong>, <strong>AWS S3</strong>, <strong>Glue</strong>, and <strong>Athena</strong>.</p>
-            </section>
-
-            <section id="skills">
-                <h3>🔧 Skills</h3>
+        <section id="experience">
+        <h3>💼 Work Experience</h3>
+        <ul class="experience">
+            <li>
+                <strong>Data Engineer at Marbill Technologies</strong>
+                <p><em>May 2023 - Present</em></p>
                 <ul>
-                    <li><strong>Programming:</strong> Python (favorite), PySpark, R, Scala, Fortran.</li>
-                    <li><strong>Databases:</strong> SQL Server, MySQL, MongoDB, Dynamo DB, Datalakes and Datalakehouses.</li>
-                    <li><strong>APIs:</strong> Designing and managing efficient data integration solutions.</li>
-                    <li><strong>Cloud Computing and Parallel Processing:</strong> Proficient with AWS services.</li>
+                    <li>Designed and managed a Data Lakehouse architecture using AWS S3, Glue, and Athena, enabling seamless integration and efficient access to data from multiple sources.</li>
+                    <li>Built scalable data pipelines capable of processing petabytes of data in real-time.</li>
+                    <li>Implemented asynchronous messaging solutions with RabbitMQ, enhancing data flow reliability.</li>
+                    <li>Migrated relational and non-relational databases such as MySQL, PostgreSQL, SQL Server, and MongoDB to cloud infrastructures.</li>
+                    <li>Automated ETL processes using PySpark, Airflow, and AWS Lambda, reducing processing times and costs.</li>
+                    <li>Deployed Machine Learning and Deep Learning models in production.</li>
                 </ul>
-            </section>
+            </li>
+        </ul>
+    </section>
 
-            <section id="tools">
-                <h3>🛠️ Tools & Technologies</h3>
-                <ul class="tools">
-                    <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/aws.svg" alt="AWS" />AWS</li>
-                    <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/airflow.svg" alt="Airflow" />Airflow</li>
-                    <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/hadoop.svg" alt="Hadoop" />Hadoop</li>
-                    <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/rabbitmq.svg" alt="Rabbit MQ" />Rabbit MQ</li>
-                    <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/docker.svg" alt="Docker" />Docker</li>
-                    <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/tensorflow.svg" alt="TensorFlow" />Neural Network</li>
-                    <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/scikit-learn.svg" alt="Scikit Learn" />Scikit Learn</li>
-                    <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/mongodb.svg" alt="MongoDB" />MongoDB</li>
-                    <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/sqlite.svg" alt="SQL" />SQL</li>
-                    <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/git.svg" alt="Git" />Git</li>
-                    <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/pycharm.svg" alt="Pycharm" />Pycharm</li>
-                    <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/powerbi.svg" alt="Power BI" />Power BI</li>
-                    <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/jira.svg" alt="Jira" />Jira</li>
-                    <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/stackoverflow.svg" alt="Stack Overflow" />Stack Overflow</li>
-                    <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/slack.svg" alt="Slack" />Slack</li>
-                </ul>
-            </section>
+    <section id="skills">
+        <h3>🔧 Skills</h3>
+        <ul>
+            <li><strong>Programming:</strong> Python (favorite), PySpark, R, Scala, Fortran.</li>
+            <li><strong>Databases:</strong> SQL Server, MySQL, MongoDB, Dynamo DB, Datalakes and Datalakehouses.</li>
+            <li><strong>APIs:</strong> Designing and managing efficient data integration solutions.</li>
+            <li><strong>Cloud Computing and Parallel Processing:</strong> Proficient with AWS services.</li>
+        </ul>
+    </section>
 
-            <section id="experience">
-                <h3>💼 Work Experience</h3>
-                <ul class="experience">
-                    <li>
-                        <strong>Data Engineer at Marbill</strong>
-                        <p><em>May 2023 - Present</em></p>
-                        <ul>
-                            <li>Designed and managed a Data Lakehouse architecture using AWS S3, Glue, and Athena, enabling seamless integration and efficient access to data from multiple sources.</li>
-                            <li>Built scalable data pipelines capable of processing petabytes of data in real-time.</li>
-                            <li>Implemented asynchronous messaging solutions with RabbitMQ, enhancing data flow reliability.</li>
-                            <li>Migrated relational and non-relational databases such as MySQL, PostgreSQL, SQL Server, and MongoDB to cloud infrastructures.</li>
-                            <li>Automated ETL processes using PySpark, Airflow, and AWS Lambda, reducing processing times and costs.</li>
-                            <li>Deployed Machine Learning and Deep Learning models in production.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
+    <section id="tools">
+        <h3>🛠️ Tools & Technologies</h3>
+        <ul class="tools">
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/aws.svg" alt="AWS" />AWS</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/airflow.svg" alt="Airflow" />Airflow</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/hadoop.svg" alt="Hadoop" />Hadoop</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/rabbitmq.svg" alt="Rabbit MQ" />Rabbit MQ</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/docker.svg" alt="Docker" />Docker</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/tensorflow.svg" alt="TensorFlow" />Neural Network</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/scikit-learn.svg" alt="Scikit Learn" />Scikit Learn</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/mongodb.svg" alt="MongoDB" />MongoDB</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/sqlite.svg" alt="SQL" />SQL</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/git.svg" alt="Git" />Git</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/pycharm.svg" alt="Pycharm" />Pycharm</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/powerbi.svg" alt="Power BI" />Power BI</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/jira.svg" alt="Jira" />Jira</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/stackoverflow.svg" alt="Stack Overflow" />Stack Overflow</li>
+            <li><img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/slack.svg" alt="Slack" />Slack</li>
+        </ul>
+    </section>
 
-            <section id="soft-skills">
-                <h3>🧠 Soft Skills</h3>
-                <ul class="soft-skills">
-                    <li><strong>In search of opportunities, challenges, and the latest technological trends</strong> to improve productivity.</li>
-                    <li><strong>Motivation for improvement</strong> and continuous learning to stay ahead in the field.</li>
-                    <li><strong>Effective communication:</strong> Ability to express ideas clearly and concisely, promoting efficient communication within the team.</li>
-                    <li><strong>Team collaboration:</strong> Enjoy working in dynamic teams, contributing to a collaborative and innovative work environment.</li>
+        <section id="soft-skills">
+        <h3>🧠 Soft Skills</h3>
+        <ul class="soft-skills">
+            <li><strong>In search of opportunities, challenges, and the latest technological trends</strong> to improve productivity.</li>
+            <li><strong>Motivation for improvement</strong> and continuous learning to stay ahead in the field.</li>
+            <li><strong>Effective communication:</strong> Ability to express ideas clearly and concisely, promoting efficient communication within the team.</li>
+            <li><strong>Team collaboration:</strong> Enjoy working in dynamic teams, contributing to a collaborative and innovative work environment.</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h3>🎓 Education</h3>
+        <ul>
+          <li><strong>AWS</strong> Cloud Practitioner. <a href="https://www.credly.com/badges/8749e483-b1ec-4ecb-943e-443bfc72f62b" target="_blank">View Certificate</a></li>
+          <li><strong>RabbitMQ Messaging Fundamentals</strong>. <a href="https://www.udemy.com/certificate/UC-0ea814b1-a845-47a1-a5fb-ca3b54877055/" target="_blank">View Certificate</a></li>
+          <li>Master’s in <strong>Big Data and Business Analytics</strong> (UCM).</li>
+          <li>Bachelor’s degree in <strong>Physics</strong> (UGR).</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h3>💼 Personal Projects</h3>
+        <ul>
+            <li><a href="https://github.com/LluisGonzaga21/CreditScoreClassification" target="_blank">Credit Score Classification</a> - 
+                <ul>
+                    <li><strong>Goal:</strong> Built a machine learning model to classify an individual's credit score based on credit-related information.</li>
+                    <li><strong>Tools & Techniques:</strong> Machine learning algorithms for classification, feature selection, data preprocessing, and model tuning.</li>
                 </ul>
-            </section>
+            </li>
+            <li><a href="https://github.com/LluisGonzaga21/KaggleCompetitionPumpItUp" target="_blank">Pump It Up: Kaggle Competition</a> -                 
+                <ul>
+                    <li><strong>Goal:</strong> Participated in Kaggle's "Pump It Up" competition to predict water pump functionality.</li>
+                    <li><strong>Tools & Techniques:</strong> Data preprocessing, feature engineering, and model evaluation for predictive accuracy.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="physics-academy">
+        <h3>🔭 My Physics Academy</h3>
+        <p><em>Universo Clases</em> was my first serious project. I developed the business idea and a web page to sell audiovisual content for students and workers who want to learn physics, mathematics, or programming.</p>
+    </section>
+
+    <section id="connect" class="center">
+        <h3>🌟 Connect with Me</h3>
+        <div class="icons">
+            <a href="https://github.com/LluisGonzaga21" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="GitHub" height="30px" width="40px" />
+            </a>
+            <a href="https://www.linkedin.com/in/lluis-gonzaga-fuster-8a4815151/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="LinkedIn" height="30px" width="40px" />
+            </a>
+            <a href="mailto:lluisgonzaga21@gmail.com">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/gmail.svg" alt="Email" height="30px" width="40px" />
+            </a>
         </div>
+    </section>
     </div>
-
     <footer>
         <p>© 2025 Lluis Gonzaga Fuster. All Rights Reserved.</p>
     </footer>
