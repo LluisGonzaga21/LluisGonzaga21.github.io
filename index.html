@@ -30,9 +30,9 @@
             width: 100%;
         }
 
-        /* Columna izquierda más amplia */
+        /* Columna izquierda más amplia y ajustada */
         .left-column {
-            width: 350px; /* Aumentado el tamaño */
+            width: 350px;
             background: white;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -41,10 +41,11 @@
             left: 20px;
             top: 100px;
             text-align: center;
+            font-size: 14px; /* Reducimos el tamaño de la fuente */
         }
 
         .left-column img {
-            width: 180px; /* Ajustado tamaño de la foto */
+            width: 180px;
             height: 180px;
             border-radius: 50%;
             margin-bottom: 20px;
@@ -53,6 +54,11 @@
         .left-column h1, .left-column h2 {
             margin: 0;
             padding: 0;
+        }
+
+        /* Espaciado entre el nombre y la foto */
+        .left-column h1 {
+            margin-bottom: 10px; /* Añadimos espacio entre el nombre y la foto */
         }
 
         .icons a {
@@ -65,9 +71,9 @@
             width: 30px;
         }
 
-        /* Columna derecha */
+        /* Columna derecha ajustada */
         .right-column {
-            margin-left: 380px; /* Ajustamos el margen izquierdo */
+            margin-left: 380px; /* Reducido el margen izquierdo */
             flex-grow: 1;
             overflow-y: auto;
             padding: 20px;
@@ -145,9 +151,6 @@
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/gmail.svg" alt="Email"/>
                 </a>
             </div>
-            <footer>
-                <p>© 2025 Lluis Gonzaga Fuster. All Rights Reserved.</p>
-            </footer>
         </div>
 
         <!-- Right column (main content) -->
@@ -250,10 +253,11 @@
                 </ul>
             </section>
         </div>
-        <footer>
-            <p>© 2025 Lluis Gonzaga Fuster. All Rights Reserved.</p>
-        </footer>
     </div>
+
+    <footer>
+        <p>© 2025 Lluis Gonzaga Fuster. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
