@@ -69,25 +69,30 @@
             gap: 20px; /* Espaciado entre elementos */
         }
 
-        /* Sección de herramientas y tecnologías (Tools & Technologies) en grid */
-        .right-column section#tools ul {
-            padding-left: 0;
-            list-style-type: none;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 2-3 columnas */
-            gap: 20px;
+        .right-column section#skills ul li {
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
-        /* Sección de Soft Skills en grid */
-        .right-column section#soft-skills ul {
+        /* Sección de tecnologías (Tools & Technologies) en 2 o 3 columnas */
+        .right-column section ul {
             padding-left: 0;
             list-style-type: none;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 2-3 columnas */
-            gap: 20px;
+            display: block;
         }
 
-        /* Sección normal (Sin grid) */
+        .right-column section ul li {
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Centrando el contenido dentro de cada sección */
         .right-column section {
             background: white;
             margin-bottom: 20px;
@@ -190,7 +195,6 @@
                 </ul>
             </section>
 
-            <!-- Skills: Grid layout -->
             <section id="skills">
                 <h3>🔧 Skills</h3>
                 <ul>
@@ -201,10 +205,9 @@
                 </ul>
             </section>
 
-            <!-- Tools & Technologies: Grid layout -->
             <section id="tools">
                 <h3>🛠️ Tools & Technologies</h3>
-                <ul>
+                <ul class="tools">
                     <li><strong>AWS</strong></li>
                     <li><strong>Airflow</strong></li>
                     <li><strong>Hadoop</strong></li>
@@ -223,10 +226,9 @@
                 </ul>
             </section>
 
-            <!-- Soft Skills: Grid layout -->
             <section id="soft-skills">
                 <h3>🧠 Soft Skills</h3>
-                <ul>
+                <ul class="soft-skills">
                     <li><strong>In search of opportunities, challenges, and the latest technological trends</strong> to improve productivity.</li>
                     <li><strong>Motivation for improvement</strong> and continuous learning to stay ahead in the field.</li>
                     <li><strong>Effective communication:</strong> Ability to express ideas clearly and concisely, promoting efficient communication within the team.</li>
