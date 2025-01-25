@@ -34,25 +34,40 @@
             position: fixed;
             top: 100px; /* Asegura que la columna izquierda no cubra el encabezado */
             left: 0;
-            width: 250px;
+            width: 200px; /* Reducción de la columna izquierda */
             background: white;
             padding: 20px;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         }
 
         .right-column {
-            margin-left: 270px; /* Deja espacio para la columna fija */
+            margin-left: 220px; /* Ajustado para el nuevo tamaño de la columna izquierda */
             flex-grow: 1;
             overflow-y: auto;
             padding: 20px;
             max-width: 900px;
         }
 
+        /* Centrando el contenido dentro de cada sección */
         .right-column section {
             background: white;
             margin-bottom: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Centra el texto dentro de la sección */
+            padding: 20px; /* Asegura que el texto no quede pegado a los bordes */
+        }
+
+        /* Centrado para los elementos dentro de las listas */
+        .right-column section ul {
+            padding-left: 0; /* Elimina los márgenes de la lista */
+            list-style-type: none; /* Elimina los puntos de la lista */
+            display: inline-block;
+            text-align: left; /* Para que el texto dentro de la lista se vea bien */
+        }
+
+        .right-column section ul li {
+            margin-bottom: 10px;
         }
 
         h1, h2, h3 {
@@ -79,6 +94,25 @@
         .icons img {
             margin: 0 10px;
         }
+
+        /* Adaptación para dispositivos móviles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left-column {
+                position: relative;
+                width: 100%;
+                margin-top: 20px;
+                box-shadow: none;
+            }
+
+            .right-column {
+                margin-left: 0;
+                padding-top: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -102,6 +136,9 @@
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/gmail.svg" alt="Email" height="30px" width="40px"/>
                 </a>
             </div>
+            <footer>
+                <p>© 2025 Lluis Gonzaga Fuster. All Rights Reserved.</p>
+            </footer>
         </div>
 
         <!-- Right column (main content) -->
@@ -217,9 +254,10 @@
                     </a>
                 </div>
             </section>
-                <footer>
-                    <p>© 2025 Lluis Gonzaga Fuster. All Rights Reserved.</p>
-                </footer>
+
+            <footer>
+                <p>© 2025 Lluis Gonzaga Fuster. All Rights Reserved.</p>
+            </footer>
         </div>
     </div>
 
