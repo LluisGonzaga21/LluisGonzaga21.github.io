@@ -132,6 +132,12 @@ section h3 {
     transition: transform 0.3s ease;
 }
 
+.icons img {
+    height: 25px;
+    width: 25px; /* Cambié a 25px para que sea consistente */
+}
+
+
 .icons a:hover {
     transform: scale(1.2);
     color: #2C8B38;
