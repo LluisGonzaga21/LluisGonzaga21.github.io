@@ -17,7 +17,7 @@
 
         .container {
             max-width: 900px;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
             background: white;
             border-radius: 8px;
@@ -47,6 +47,31 @@
             color: #4CAF50;
         }
 
+        section {
+            background: white;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        section h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        .experience-item {
+            background: #ffffff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -60,14 +85,6 @@
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-
-        .grid-container ul li:first-child {
-            font-weight: bold;
-            font-size: 16px;
-            margin-bottom: 10px;
-            text-decoration: underline;
         }
 
         footer {
@@ -114,17 +131,16 @@
 
         <section id="experience">
             <h3>💼 Work Experience</h3>
-            <ul class="experience">
-                <li>
-                    <strong>Data Engineer at Marbill Technologies</strong>
-                    <p><em>May 2023 - Present</em></p>
-                    <ul>
-                        <li>Designed and managed a Data Lakehouse architecture using AWS S3, Glue, and Athena.</li>
-                        <li>Built scalable data pipelines capable of processing petabytes of data in real-time.</li>
-                        <li>Automated ETL processes using PySpark, Airflow, and AWS Lambda.</li>
-                        <li>Deployed Machine Learning and Deep Learning models in production.</li>
-                    </ul>
-                </li>
+            <div class="experience-item">
+                <strong>Data Engineer at Marbill Technologies</strong>
+                <p><em>May 2023 - Present</em></p>
+                <ul>
+                    Designed and managed a Data Lakehouse architecture using AWS S3, Glue, and Athena.
+                    Built scalable data pipelines capable of processing petabytes of data in real-time.
+                    Automated ETL processes using PySpark, Airflow, and AWS Lambda.
+                    Deployed Machine Learning and Deep Learning models in production.
+                </ul>
+            </div class="experience-item">
                 <li>
                     <strong>Director at Universo Clases Academy</strong>
                     <p><em>2020 - 2023</em></p>
