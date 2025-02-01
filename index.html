@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lluis Gonzaga Fuster | Data Engineer</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,84 +12,62 @@
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
-            line-height: 1.6;
-            display: flex;
-        }
-
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 20px 0;
             text-align: center;
-            width: 100%;
         }
 
         .container {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-        }
-
-        .left-column {
-            width: 350px;
-            background: white;
+            max-width: 900px;
+            margin: 0 auto;
             padding: 20px;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            background: white;
             border-radius: 8px;
-            position: fixed;
-            left: 20px;
-            top: 100px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-header {
             text-align: center;
-            font-size: 14px;
+            padding: 20px;
         }
 
-        .left-column img {
-            width: 180px;
-            height: 180px;
+        .profile-header img {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        .left-column h1, .left-column h2 {
-            margin: 0;
-            padding: 0;
-        }
-
-        .left-column h1 {
             margin-bottom: 10px;
         }
 
         .icons a {
-            margin: 10px;
-            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            color: #333;
+            text-decoration: none;
         }
 
-        .icons img {
-            height: 25px;
-            width: 30px;
-        }
-
-        .right-column {
-            margin-left: 380px;
-            flex-grow: 1;
-            overflow-y: auto;
-            padding: 20px;
-            max-width: 900px;
+        .icons a:hover {
+            color: #4CAF50;
         }
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
-            margin-bottom: 30px;
+            margin-top: 20px;
         }
 
-        .grid-container li {
+        .grid-container ul {
             list-style: none;
-            background-color: white;
             padding: 15px;
+            background-color: white;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .grid-container ul li:first-child {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-decoration: underline;
         }
 
         footer {
@@ -100,60 +77,11 @@
             background: #333;
             color: white;
         }
-
-        #skills-tools .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        #skills-tools ul {
-            list-style: none;
-            padding: 15px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        #skills-tools ul li:first-child {
-            font-weight: bold;
-            font-size: 16px;
-            margin-bottom: 10px;
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-
-            .left-column {
-                position: relative;
-                width: 100%;
-                margin-top: 20px;
-                box-shadow: none;
-            }
-
-            .right-column {
-                margin-left: 0;
-                padding-top: 20px;
-            }
-
-            .grid-container {
-                grid-template-columns: 1fr;
-            }
-
-            #skills-tools .grid-container {
-                grid-template-columns: 1fr;
-            }
-        }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <div class="left-column">
+        <div class="profile-header">
             <header>
                 <h1>💻 Lluis Gonzaga Fuster</h1>
                 <h2>Data Engineer & Data Science Enthusiast</h2>
@@ -176,103 +104,99 @@
             </div>
         </div>
 
-        <div class="right-column">
-            <section id="about">
-                <h3>About Me 😊</h3>
-                    <p>🚀 <strong>Data Engineer</strong> specializing in <strong>designing and implementing scalable Big Data and Cloud Computing solutions</strong>. Experienced in <strong>creating Data Lakehouse architectures</strong>, <strong>data pipelines</strong>, and <strong>deploying Machine Learning models in production environments</strong>. Proficient with tools like <strong>AWS S3</strong>, <strong>Glue</strong>, <strong>Athena</strong>, <strong>PySpark</strong>, and <strong>RabbitMQ</strong> to <strong>optimize large-scale data processing and accessibility</strong>.
-                    </p>
-                    <p></p>
-                    <p><strong>Passionate about programming</strong>, <strong>solving complex problems</strong>, and <strong>continuous learning</strong>, I seek a <strong>dynamic environment</strong> where I can contribute with <strong>innovative and impactful solutions</strong> while collaborating with teams to achieve <strong>technical excellence</strong>.</p>
-            </section>
+        <section id="about">
+            <h3>About Me 😊</h3>
+                <p>🚀 <strong>Data Engineer</strong> specializing in <strong>designing and implementing scalable Big Data and Cloud Computing solutions</strong>. Experienced in <strong>creating Data Lakehouse architectures</strong>, <strong>data pipelines</strong>, and <strong>deploying Machine Learning models in production environments</strong>. Proficient with tools like <strong>AWS S3</strong>, <strong>Glue</strong>, <strong>Athena</strong>, <strong>PySpark</strong>, and <strong>RabbitMQ</strong> to <strong>optimize large-scale data processing and accessibility</strong>.
+                </p>
+                <p></p>
+                <p><strong>Passionate about programming</strong>, <strong>solving complex problems</strong>, and <strong>continuous learning</strong>, I seek a <strong>dynamic environment</strong> where I can contribute with <strong>innovative and impactful solutions</strong> while collaborating with teams to achieve <strong>technical excellence</strong>.</p>
+        </section>
 
-            <section id="experience">
-                <h3>💼 Work Experience</h3>
-                <ul class="experience">
-                    <li>
-                        <strong>Data Engineer at Marbill Technologies</strong>
-                        <p><em>May 2023 - Present</em></p>
-                        <ul>
-                            <li>Designed and managed a Data Lakehouse architecture using AWS S3, Glue, and Athena.</li>
-                            <li>Built scalable data pipelines capable of processing petabytes of data in real-time.</li>
-                            <li>Automated ETL processes using PySpark, Airflow, and AWS Lambda.</li>
-                            <li>Deployed Machine Learning and Deep Learning models in production.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Director at Universo Clases Academy</strong>
-                        <p><em>2020 - 2023</em></p>
-                        <ul>
-                            <li>Founded an online academy specializing in Physics, Mathematics, and Programming (Python, Fortran, C++).</li>
-                            <li>Implemented digital marketing and SEO strategies to grow the user base and increase visibility.</li>
-                            <li>Coordinated the implementation of online learning platforms, improving remote education accessibility.</li>
-                            <li>Designed and developed the academy’s website using JavaScript, HTML, CSS, and WordPress.</li>
-                        </ul>
-                    </li>
+        <section id="experience">
+            <h3>💼 Work Experience</h3>
+            <ul class="experience">
+                <li>
+                    <strong>Data Engineer at Marbill Technologies</strong>
+                    <p><em>May 2023 - Present</em></p>
+                    <ul>
+                        <li>Designed and managed a Data Lakehouse architecture using AWS S3, Glue, and Athena.</li>
+                        <li>Built scalable data pipelines capable of processing petabytes of data in real-time.</li>
+                        <li>Automated ETL processes using PySpark, Airflow, and AWS Lambda.</li>
+                        <li>Deployed Machine Learning and Deep Learning models in production.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Director at Universo Clases Academy</strong>
+                    <p><em>2020 - 2023</em></p>
+                    <ul>
+                        <li>Founded an online academy specializing in Physics, Mathematics, and Programming (Python, Fortran, C++).</li>
+                        <li>Implemented digital marketing and SEO strategies to grow the user base and increase visibility.</li>
+                        <li>Coordinated the implementation of online learning platforms, improving remote education accessibility.</li>
+                        <li>Designed and developed the academy’s website using JavaScript, HTML, CSS, and WordPress.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills-tools">
+            <h3>🔧 Skills & Tools</h3>
+            <div class="grid-container">
+                <ul>
+                    <li><strong>Programming Languages</strong></li>
+                    <li>Python</li>
+                    <li>PySpark</li>
+                    <li>Scala</li>
+                    <li>R</li>
                 </ul>
-            </section>
+                <ul>
+                    <li><strong>Soft Skills</strong></li>
+                    <li>Problem-solving</li>
+                    <li>Team Collaboration</li>
+                    <li>Agility in Learning</li>
+                    <li>Adaptability</li>
+                </ul>
+                <ul>
+                    <li><strong>Databases</strong></li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>SQL Server</li>
+                    <li>MongoDB</li>
+                    <li>Amazon RDS</li>
+                    <li>Amazon DynamoDB</li>
+                </ul>
+                <ul>
+                    <li><strong>AWS Technologies</strong></li>
+                    <li>Lambda</li>
+                    <li>S3</li>
+                    <li>Glue</li>
+                    <li>Athena</li>
+                    <li>EMR</li>
+                    <li>CloudWatch</li>
+                </ul>
+            </div>
+        </section>
 
-            <section id="skills-tools">
-                <h3>🔧 Skills & Tools</h3>
-                <div class="grid-container">
-                    <ul>
-                        <li><strong>Programming Languages</strong></li>
-                        <li>Python</li>
-                        <li>PySpark</li>
-                        <li>Scala</li>
-                        <li>R</li>
-                    </ul>
-                    <ul>
-                        <li><strong>Soft Skills</strong></li>
-                        <li>Problem-solving</li>
-                        <li>Team Collaboration</li>
-                        <li>Agility in Learning</li>
-                        <li>Adaptability</li>
-                    </ul>
-                    <ul>
-                        <li><strong>Databases</strong></li>
-                        <li>MySQL</li>
-                        <li>PostgreSQL</li>
-                        <li>SQL Server</li>
-                        <li>MongoDB</li>
-                        <li>Amazon RDS</li>
-                        <li>Amazon DynamoDB</li>
-                    </ul>
-                    <ul>
-                        <li><strong>AWS Technologies</strong></li>
-                        <li>Lambda</li>
-                        <li>S3</li>
-                        <li>Glue</li>
-                        <li>Athena</li>
-                        <li>EMR</li>
-                        <li>CloudWatch</li>
-                    </ul>
+        <section id="education">
+            <h3>🎓 Education</h3>
+            <div class="grid-container">
+                <div>
+                    <strong>AWS Certified Cloud Practitioner</strong>
+                    <p><a href="https://www.credly.com/badges/8749e483-b1ec-4ecb-943e-443bfc72f62b" target="_blank">View Certificate</a></p>
                 </div>
-            </section>
-
-            <section id="education">
-                <h3>🎓 Education</h3>
-                <div class="grid-container">
-                    <div>
-                        <strong>AWS Certified Cloud Practitioner</strong>
-                        <p><a href="https://www.credly.com/badges/8749e483-b1ec-4ecb-943e-443bfc72f62b" target="_blank">View Certificate</a></p>
-                    </div>
-                    <div>
-                        <strong>RabbitMQ Messaging Fundamentals</strong>
-                        <p><a href="https://www.udemy.com/certificate/UC-0ea814b1-a845-47a1-a5fb-ca3b54877055/" target="_blank">View Certificate</a></p>
-                    </div>
-                    <div>
-                        <strong>Master's degree in Big Data and Business Analytics</strong>
-                        <p>University of Madrid (UCM) - Graduated in 2023</p>
-                    </div>
-                    <div>
-                        <strong>Bachelor's degree in Phisics</strong>
-                        <p>University of Granada (UGR) - Graduated in 2020</p>
-                    </div>
+                <div>
+                    <strong>RabbitMQ Messaging Fundamentals</strong>
+                    <p><a href="https://www.udemy.com/certificate/UC-0ea814b1-a845-47a1-a5fb-ca3b54877055/" target="_blank">View Certificate</a></p>
                 </div>
-            </section>
-
-        </div>
+                <div>
+                    <strong>Master's degree in Big Data and Business Analytics</strong>
+                    <p>University of Madrid (UCM) - Graduated in 2023</p>
+                </div>
+                <div>
+                    <strong>Bachelor's degree in Phisics</strong>
+                    <p>University of Granada (UGR) - Graduated in 2020</p>
+                </div>
+            </div>
+        </section>
     </div>
-
 </body>
 </html>
